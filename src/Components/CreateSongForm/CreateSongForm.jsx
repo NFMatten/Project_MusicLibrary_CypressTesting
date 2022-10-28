@@ -25,30 +25,30 @@ const CreateSong = (props) => {
             <div className='col'>
                 <div className='row spacing padding-lr'>
                     <label className='col-sm-2 col-form-label label-styling'>Title</label>
-                    <input className='col-sm-8 form-control' type='text' placeholder='Enter Song Title' value={title} onChange={(event) => setTitle(event.target.value)} />
+                    <input className='col-sm-8 form-control' type='text' placeholder='Enter Song Title' value={title} onChange={(event) => setTitle(event.target.value)} data-cy="song-title"/>
                 </div>
 
                 <div className='row spacing padding-lr'>
                     <label className='col-sm-2 col-form-label label-styling'>Artist</label>
-                    <input className='col-sm-8 form-control' type='text' placeholder='Enter Artist Name' value={artist} onChange={(event) => setArtist(event.target.value)} />
+                    <input className='col-sm-8 form-control' type='text' placeholder='Enter Artist Name' value={artist} onChange={(event) => setArtist(event.target.value)} data-cy="song-artist"/>
                 </div>
 
                 <div className='row spacing padding-lr'>
                     <label className='col-sm-2 col-form-label label-styling'>Album</label>
-                    <input className='col-sm-8 form-control' type='text' placeholder='Enter Album Name' value={album} onChange={(event) => setAlbum(event.target.value)}/>
+                    <input className='col-sm-8 form-control' type='text' placeholder='Enter Album Name' value={album} onChange={(event) => setAlbum(event.target.value)} data-cy="song-album"/>
                 </div>
 
                 <div className='row spacing padding-lr'>
                     <label className='col-sm-2 col-form-label label-styling'>Release Date</label>
-                    <input className='col-sm-8 form-control' type='date' value={releaseDate} onChange={(event) => setReleaseDate(event.target.value)}/>
+                    <input className='col-sm-8 form-control' type='date' value={releaseDate} onChange={(event) => setReleaseDate(event.target.value)} data-cy="song-date"/>
                 </div>
 
                 <div className='row spacing padding-lr'>
                     <label className='col-sm-2 col-form-label label-styling'>Genre</label>
-                    <input className='col-sm-8 form-control' type='text' placeholder='Enter Genre' value={genre} onChange={(event) => setGenre(event.target.value)}/>
+                    <input className='col-sm-8 form-control' type='text' placeholder='Enter Genre' value={genre} onChange={(event) => setGenre(event.target.value)} data-cy="song-genre"/>
                 </div>
 
-                <div className='d-flex justify-content-end'><button className='btn btn-primary' type='submit'>Add Song</button></div>
+                <div className='d-flex justify-content-end'><button className='btn btn-primary' type='submit' data-cy='add-song-btn'>Add Song</button></div>
             </div>
         </form>
      );
