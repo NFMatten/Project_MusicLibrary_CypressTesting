@@ -1,0 +1,32 @@
+.border-box {
+    background-color: #FFFFFF;
+    border: 1px;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.4);
+    margin: 1em;
+    padding: 1em;
+}
+
+.label-styling {
+    color: #707070;
+    font-size: 27px;
+    font-weight: 600;
+    padding-right: 1em;
+}
+
+.textbox-styling {
+    border-radius: 10px;
+    border-color: grey;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.1);
+}
+
+.spacing {
+    margin-bottom: 1em;
+}
+
+.padding-lr{
+    padding-left: 10px;
+    padding-right: 10px;
+}
