@@ -16,7 +16,7 @@ const DisplayMusic = (props) => {
     return (
         <div>
             <h3 className="d-flex justify-content-center" data-cy='music-library'>Music Library</h3>
-            <table className='table' id='music-library'>
+            <table className='table' id='music-library' data-cy='music-table'>
                 <thead>
                     <tr>
                         <th>Title</th>
@@ -35,7 +35,7 @@ const DisplayMusic = (props) => {
                                 <td>{song.album}</td>
                                 <td>{song.release_date}</td>
                                 <td>{song.genre}</td>
-                                <td><button type='button' onClick={() => deleteSong(song.id)} className='btn btn-primary'>Delete</button></td>
+                                <td><button type='button' onClick={() => deleteSong(song.id)} className='btn btn-primary' data-cy='delete'>Delete</button></td>
                             </tr>
                         )
                     })} 
