@@ -15,7 +15,7 @@ const DisplayMusic = (props) => {
 
     return (
         <div>
-            <h3 className="d-flex justify-content-center">Music Library</h3>
+            <h3 className="d-flex justify-content-center" data-cy='music-library'>Music Library</h3>
             <table className='table' id='music-library'>
                 <thead>
                     <tr>
